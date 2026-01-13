@@ -36,7 +36,7 @@ uploaded_file = st.file_uploader("اختر صورة الخطاب أو التعم
 
 if uploaded_file is not None:
     # عرض الصورة المرفوعة مع التحديث الجديد للمتصفحات
-    st.image(uploaded_file, caption='الخطاب المرفوع', width=None)
+    st.image(uploaded_file, caption='الخطاب المرفوع', use_column_width="always")
     
     if st.button("تحليل وتبسيط الخطاب"):
         with st.spinner('جاري الاتصال بـ AWS وتحليل الخطاب...'):
